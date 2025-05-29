@@ -35,7 +35,7 @@ import eh6 from '@/assets/imgs/projekter/threejs-eternalharvest/eh6.png'
 import eh7 from '@/assets/imgs/projekter/threejs-eternalharvest/eh7.png'
 
 //sushi train
-import sushitrain from '@/assets/imgs/projekter/sushi-train/sushitrain.png'
+import sushitrain from '@/assets/imgs/projekter/sushi-train/sushitrain.PNG'
 import stP1 from '@/assets/imgs/projekter/sushi-train/stP1.JPG'
 
 //drill, spill, kill - sos poster
