@@ -70,6 +70,16 @@ body {
   margin-inline: clamp(1.5rem, 6vw, 5rem);
 }
 
+@media (max-width: 480px) {
+  #app {
+    margin: 0.5rem; /* mindre margin hele vejen rundt */
+  }
+
+  body {
+    margin-inline: 1rem; /* smallere sidekanter */
+  }
+}
+
 .stroke-box {
   outline: 1px solid var(--border-clr);
 }
