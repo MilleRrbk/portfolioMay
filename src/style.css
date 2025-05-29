@@ -72,11 +72,11 @@ body {
 
 @media (max-width: 480px) {
   #app {
-    margin: 0.5rem; /* mindre margin hele vejen rundt */
+    margin: 0.3rem; /* mindre margin hele vejen rundt */
   }
 
   body {
-    margin-inline: 1rem; /* smallere sidekanter */
+    margin-inline: .8rem; /* smallere sidekanter */
   }
 }
 
