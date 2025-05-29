@@ -56,14 +56,14 @@
   background: var(--sec-clr);
   border: 1px solid var(--border-clr);
   display: block;
-  width: clamp(8ch, 10vw, 12ch); /* all buttons gets equal width */
+  width: clamp(6ch, 8vw, 10ch); /* reduceret bredde */
   text-align: center;
-  margin-block: clamp(0.2rem, 0.8vw, 0.6rem);
-  padding-block: clamp(0.2rem, 0.2vw, 0.4rem);
-  padding-inline: clamp(0.5rem, 1.7vw, 2rem);
+  margin-block: clamp(0.1rem, 0.8vw, 1.5rem); /* mindre vertikal margin */
+  padding-block: clamp(0.1rem, 0.2vw, 1rem); /* mindre højde */
+  padding-inline: clamp(0.3rem, 1.7vw, 1.5rem); /* mindre horisontal padding */
   cursor: pointer;
   color: var(--text-clr);
-  font-size: clamp(.6rem, 1vw, 2rem);
+  font-size: clamp(0.5rem, 0.9vw, 1rem); /* mindre skrift */
   text-decoration: none;
   font-family: AzeretMonoSemiBold, sans-serif;
   font-weight: 600;
@@ -73,6 +73,13 @@
     border-color 0.3s ease;
 }
 
+@media (max-width: 400px) {
+  .nav-btn {
+    font-size: 0.55rem;
+    padding-block: 0.15rem;
+    padding-inline: 0.6rem;
+  }
+}
 
 .nav-btn:hover {
   background-color: var(--pri-clr);
