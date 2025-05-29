@@ -10,7 +10,7 @@
         src="../assets/mp4s/fish.mp4"
       ></video>
         <div class="hero-logo">
-        <!-- inline image here -->
+        <!--inline image here -->
         <img src="../assets/imgs/logopinkhvid.png"
         alt="Mille Rørbæk Portfolio" 
         class="logo"
