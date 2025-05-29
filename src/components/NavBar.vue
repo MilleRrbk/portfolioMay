@@ -76,8 +76,8 @@
 @media (max-width: 400px) {
   .nav-btn {
     font-size: 0.45rem;
-    padding-block: 0.10rem;
-    padding-inline: 0.5rem;
+    padding-block: 0.3rem;
+    padding-inline: 1rem;
   }
 }
 
