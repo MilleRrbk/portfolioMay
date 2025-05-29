@@ -81,6 +81,14 @@
   }
 }
 
+@media (max-width: 480px) {
+  .nav-item {
+    justify-content: center !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+
 .nav-btn:hover {
   background-color: var(--pri-clr);
   color: var(--sec-clr);
