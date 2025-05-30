@@ -32,8 +32,8 @@
 <style scoped>
 .highlights-title {
   grid-column: 1 / 13;
-  margin-top: clamp(1.5rem, 3vw, 5rem); 
-  font-size: clamp(1.2rem, 2.8vw, 2.5rem);
+  margin-top: var(--space-xl);
+  font-size: var(--fs-lg);
   color: var(--text-clr);
   font-family: AzeretMono, sans-serif;
 }

@@ -81,7 +81,7 @@ export default {
   gap: clamp(1rem,2vw,2rem);
   color: var(--text-clr);
   font-family: Poppins, sans-serif;
-  font-size: clamp(0.875rem, 2vw, 1.25rem);
+  font-size: var(--fs-sm);
   align-items: start;
 }
 
@@ -122,7 +122,7 @@ export default {
   line-height: 1.6;
   color: var(--text-clr);
   font-family: Poppins, sans-serif;
-  font-size: clamp(0.875rem, 2vw, 1.25rem);
+  font-size: var(--fs-sm);
 }
 
 

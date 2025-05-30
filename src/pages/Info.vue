@@ -23,7 +23,7 @@
       <section class="me-intro page-grid">
         <h2 class="page-title">Kom i kontakt!</h2>
       <div class="info-text">
-        <p>Email</p>
+        <p>Email:</p>
         <p class="link-styling"><a href="mailto:mille.rorbak@hotmail.com">mille.rorbak@hotmail.com</a></p>
       </div>
       </section>
@@ -43,7 +43,7 @@
   text-decoration: underline 4px;
   grid-column: 1 / 13;
   margin-top: 0;
-  font-size: clamp(1.2rem, 1.5vw, 2rem);
+  font-size: var(--fs-md);
   color: var(--text-clr);
   font-family: AzeretMono, sans-serif;
 }
@@ -65,7 +65,7 @@
   .info-detail {
   display: grid;
   grid-template-columns: repeat(12,1fr);
-  gap: clamp(1rem,2vw,2rem);
+  gap: var(--space-lg);
   }
 
   .info-text { 
@@ -83,17 +83,37 @@
   }
 
   .info-text p {
-  margin-bottom: 5vw; 
+    margin-bottom: var(--space-lg);
 }
 
 .me-intro {
   grid-column: 1 / -1;
   display: grid;
   grid-template-columns: repeat(12,1fr);
-  gap: clamp(1rem,2vw,2rem);
   color: var(--text-clr);
   font-family: Poppins, sans-serif;
-  font-size: clamp(0.875rem, 2vw, 1.25rem);
+  font-size: var(--fs-sm);
   align-items: start;
 }
+@media (max-width: 580px) {
+  .info-text {
+    grid-column: 1 / -1;
+  }
+
+  .info-image {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: center;
+    margin-top: var(--space-md);
+  }
+
+  .info-text p {
+    grid-column: 1 / -1;
+  }
+
+  .info-image img {
+    width: 60%; /* valgfrit, så det ikke bliver for stort på mobil */
+  }
+}
+
 </style>

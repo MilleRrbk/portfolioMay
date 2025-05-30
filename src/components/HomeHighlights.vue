@@ -72,7 +72,6 @@
   
 .home-highlight-image-container {
   aspect-ratio: 1/1;
-  flex: 0 0 clamp(200px, 25vw, 400px);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -82,19 +81,25 @@
 .home-highlight-image {
   width: 100%;
   height: 100%;
+  aspect-ratio: 1 / 1;
   object-fit: cover;
   object-position: center;
+  display: block;
 }
+
   
-  .home-highlight-text {
-    flex: 1;
-    padding: clamp(1rem, 2vw, 2rem);
-  }
+.home-highlight-text {
+  overflow: hidden;
+  display: flex;
+  max-height: 100%;
+  margin-left: 15px;
+}
+
   
   .home-highlight-text h3 {
   margin: 0;
   font-family: AzeretMono, sans-serif;
-  font-size: clamp(1.2rem, 2vw, 1.5rem);
+  font-size: var(--fs-ml);
   color: var(--text-clr);
 }
   </style>

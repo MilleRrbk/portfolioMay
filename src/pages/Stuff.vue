@@ -3,7 +3,7 @@
 
     <h1 class="page-title">Andet</h1>
     <p class="page-intro">
-      Her finder du en kollektion af analoge værker, jeg har lavet igennem tiden. 
+      Her finder du en kollektion af mine analoge værker keramik, malerier og tegninger. 
     </p>
 
     <!-- grid of non-clickable cards -->
@@ -42,8 +42,8 @@ export default {
   grid-column: 1 / 13;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: clamp(1rem, 7.5vw, 10rem);
-  margin-bottom: 5vw;
+  gap: var(--space-xl);
+  margin-bottom: var(--space-xl);
 }
 
 /* 2 images per row */
@@ -77,7 +77,6 @@ export default {
   align-items: center;
   justify-content: center;
   outline: 1px solid var(--border-clr);
-
 }
 
 .showcase-image {
@@ -86,14 +85,14 @@ export default {
   object-fit: contain;
 }
 
-
 /* — title for each card — */
 .showcase-title {
-  margin: clamp(0.5rem, 1.5vw, 1rem) 0 0;
-  font-size: clamp(1rem, 1vw, 1.5rem);
+  margin-top: var(--space-sm);
+  font-size: var(--fs-sm);
   text-align: left;
   color: var(--text-clr);
   font-family: AzeretMono, sans-serif;
   font-weight: 400;
 }
 </style>
+

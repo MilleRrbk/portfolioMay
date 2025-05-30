@@ -68,7 +68,7 @@ export const workProjects = [
   
   { id: 2, 
     slug: 'kaffe-mik',
-    title: 'Experiencesite - Kaffemik', 
+    title: 'Experience site - Kaffemik', 
     heroImage: kaffemikFinalScene, 
     longIntro: 'I denne opgave, skulle vi lave et oplevelsessite, som omhandlede Grønland',
     thumbs: [ k3, k1, k2 ],

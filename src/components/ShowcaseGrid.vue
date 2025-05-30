@@ -38,9 +38,8 @@ export default {
   grid-column: 1 / 13;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: clamp(1rem, 7.5vw, 10rem);
-  margin-bottom:5vw;
-
+  gap: var(--space-xl);
+  margin-bottom: var(--space-xl);
 }
 
 /* 2 images per row */
@@ -95,9 +94,9 @@ export default {
 
 /* title under the box */
 .showcase-title {
-  margin: clamp(0.5rem, 1.5vw, 1rem) 0 0;
+  margin-top: var(--space-sm);
   text-align: left;  font-family: AzeretMono, sans-serif;
-  font-size: clamp(1rem, 1vw, 1.5rem);
+  font-size: var(--fs-sm);
   text-align: left;
   color: var(--text-clr);
 }

@@ -41,25 +41,82 @@
   --border-clr: #DBE5D7; /* honeydew */
   --text-clr: #F4FCF0;   /* light green */
 
-  /* text sizes 1rem (16px) */
-  --fs-xs: 0.75rem;    /* 12px  – small captions */
-  --fs-sm: 0.875rem;   /* 14px  – small body */
-  --fs-md: 1rem;       /* 16px  – regular body */
-  --fs-lg: 1.25rem;    /* 20px  – medium body */
-  --fs-xl: 1.5rem;     /* 24px  – h4 / small headers */
-  --fs-2xl: 2rem;      /* 32px  – h3 */
-  --fs-3xl: 2.5rem;    /* 40px  – h2 */
-  --fs-4xl: 3rem;      /* 48px  – h1 */
-}
+/*desktop*/
+    --fs-xs: 0.8rem;
+    --fs-sm: 1rem;
+    --fs-md: 1.125rem;
+    --fs-ml: 1.2rem;
+    --fs-lg: 1.5rem;
+    --fs-xl: 3rem;
 
+  /* spacing (default) */
+  --space-3xs: 0.125rem;  /* 2px */
+  --space-2xs: 0.25rem;   /* 4px */
+  --space-xs:  0.5rem;    /* 8px */
+  --space-sm:  0.75rem;   /* 12px */
+  --space-md:  1rem;      /* 16px */
+  --space-ml:  1.5rem;    /* 24px */
+  --space-lg:  2rem;      /* 32px */
+  --space-xl:  3rem;      /* 48px */
+  --space-2xl: 4rem;      /* 64px */
+  --space-3xl: 6rem;      /* 96px */
+  }
+  
+  @media (max-width: 768px) {
+    :root {
+      --fs-xs: 0.5rem;
+      --fs-sm: 0.85rem;
+      --fs-md: 1rem;
+      --fs-ml: 1.1rem;
+      --fs-lg: 1.25rem;
+      --fs-xl: 2rem;
+
+    /*spacing*/
+      --space-3xs: 0.125rem;
+    --space-2xs: 0.25rem;
+    --space-xs:  0.5rem;
+    --space-sm:  0.65rem;
+    --space-md:  0.85rem;
+    --space-ml:  1.2rem;
+    --space-lg:  1.5rem;
+    --space-xl:  2.25rem;
+    --space-2xl: 3rem;
+    --space-3xl: 4.5rem;
+    }
+  }
+
+/* små mobiler */
+@media (max-width: 449px) {
+  :root {
+    --fs-xs: 0.4rem;
+    --fs-sm: 0.75rem;
+    --fs-md: 0.9rem;
+    --fs-ml: 1rem;
+    --fs-lg: 1.1rem;
+    --fs-xl: 1.5rem;
+
+    /*spacing*/
+    --space-3xs: 0.125rem;
+    --space-2xs: 0.2rem;
+    --space-xs:  0.4rem;
+    --space-sm:  0.6rem;
+    --space-md:  0.75rem;
+    --space-ml:  1rem;
+    --space-lg:  1.25rem;
+    --space-xl:  1.75rem;
+    --space-2xl: 2.5rem;
+    --space-3xl: 3.5rem;
+  }
+}
 /* general styling */
 html {
   scroll-behavior: smooth;
+  font-size: 16px;
 }
 
 #app {
   background-color: var(--sec-clr);
-  margin: clamp(.5rem, 1.3vw, 3rem);
+  margin: var(--space-sm);
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -67,16 +124,16 @@ html {
 
 body {
   background-color: var(--sec-clr);
-  margin-inline: clamp(1.5rem, 6vw, 5rem);
+  margin-inline: var(--space-lg);
 }
 
 @media (max-width: 480px) {
   #app {
-    margin: 0.3rem; /* mindre margin hele vejen rundt */
+    margin: var(--space-sm);
   }
 
   body {
-    margin-inline: .8rem; /* smallere sidekanter */
+    margin-inline: var(--space-sm);
   }
 }
 
@@ -88,7 +145,7 @@ body {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-auto-rows: auto;
-  font-family: Micro5;
+  font-family: AzeretMono;
   align-items: start;
 
 }
@@ -115,7 +172,7 @@ body {
 }
 
 .hero-logo .logo {
-  width: clamp(200px, 40vw, 650px);
+  width: clamp(250px, 40vw, 650px);
   height: auto;
 }
 
@@ -125,36 +182,32 @@ body {
   
 /* inner padding and text styling */
 .intro-box {
-  margin-top: clamp(2rem, 2.5vw, 5rem);
-  margin-bottom: clamp(1rem, .8vw, 1.6rem);
-  padding: clamp(1rem, 2vw, 1.5rem); 
+  margin-top: var(--space-xl);
+  margin-bottom: var(--space-md);
+  padding: var(--space-md);
 }
-  
-.intro-box h2 {
-  margin: 0;
-  text-transform: uppercase;
-  font-family: AzeretMono, sans-serif;
-  font-size: clamp(1rem, 1.5vw, 3rem);
-  color: var(--text-clr);
-  white-space: nowrap;
-  }
 
 /* — page styling — */
 .page-title {
-  grid-column: 1 / 13; /* full width */
-  margin-top: clamp(1.5rem, 4vw, 6rem); 
-  font-size: clamp(1.2rem, 2.8vw, 2.5rem);
+  grid-column: 1 / 13;
+  margin-top: var(--space-xl);
+  font-size: var(--fs-lg);
   color: var(--text-clr);
   font-family: AzeretMono, sans-serif;
 }
 
-/* — intro text styling — */
 .page-intro {
-  grid-column: 1 / 9; /* span 8 of 12 cols */
-  margin-bottom: clamp(0.75rem, 3.5vw, 3.5rem);
-  font-size: clamp(0.875rem, 2vw, 1.25rem);
+  grid-column: 1 / 9;
+  margin-bottom: var(--space-lg);
+  font-size: var(--fs-sm);
   line-height: 1.6;
   color: var(--text-clr);
   font-family: Poppins, sans-serif;
   font-weight: 400;
+}
+
+@media (max-width: 768px) {
+  .page-intro{
+    grid-column: 1 / 13;
+  }
 }

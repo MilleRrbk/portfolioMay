@@ -43,49 +43,52 @@
 .nav-item:nth-child(1),
 .nav-item:nth-child(2) {
   justify-content: flex-start;
-  padding-left: clamp(0.5rem, 2vw, 1rem);
+  padding-left: var(--space-sm);
 }
 
 .nav-item:nth-child(3),
 .nav-item:nth-child(4) {
   justify-content: flex-end;
-  padding-right: clamp(0.5rem, 2vw, 1rem);
+  padding-right: var(--space-sm);
 }
 
 .nav-btn {
   background: var(--sec-clr);
   border: 1px solid var(--border-clr);
   display: block;
-  width: clamp(6ch, 8vw, 10ch); /* reduceret bredde */
+  width: 100%;
+  max-width: 10ch;
   text-align: center;
-  margin-block: clamp(0.1rem, 0.8vw, 1.5rem); /* mindre vertikal margin */
-  padding-block: clamp(0.1rem, 0.2vw, 1rem); /* mindre højde */
-  padding-inline: clamp(0.3rem, 1.7vw, 1.5rem); /* mindre horisontal padding */
+  margin-block: var(--space-xs);
+  padding-block: var(--space-2xs);
+  padding-inline: var(--space-sm);
   cursor: pointer;
   color: var(--text-clr);
-  font-size: clamp(0.5rem, 0.9vw, 1rem); /* mindre skrift */
+  font-size: var(--fs-xs);
   text-decoration: none;
   font-family: AzeretMonoSemiBold, sans-serif;
   font-weight: 600;
-  transition:
-    background-color 0.3s ease,
-    color 0.3s ease,
-    border-color 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
 }
 
 @media (max-width: 400px) {
   .nav-btn {
-    font-size: 0.45rem;
-    padding-block: 0.3rem;
-    padding-inline: 1rem;
+    padding-block: var(--space-2xs);
+    padding-inline: var(--space-xs);
+    width: 100%;
+    min-width: fit-content;
+    justify-content: center;
+    margin-block: 0;
   }
-}
 
-@media (max-width: 480px) {
   .nav-item {
-    justify-content: center !important;
-    padding-left: 0 !important;
-    padding-right: 0 !important;
+    padding: 0;
+    justify-content: stretch;
+  }
+
+  .stroke-box {
+    border: none;
+    padding: 0;
   }
 }
 
@@ -99,6 +102,7 @@
   background-color: var(--text-clr);
   color: var(--sec-clr);
 }
+
 </style>
 
 <script>
