@@ -33,9 +33,9 @@ export const stuffItems = [
   { id: 11, title: 'To fugle - akryl', link: '/stuff/11', image: paintingBirds },
   { id: 12, title: 'Solsikker - akryl', link: '/stuff/12', image: sunflowers },
   { id: 13, title: 'Vingummi - akryl', link: '/stuff/13', image: winegum },
-  { id: 14, title: 'Skitse 1', link: '/stuff/14', image: sketch1 },
-  { id: 15, title: 'Skitse 2', link: '/stuff/15', image: sketch2 },
-  { id: 16, title: 'Skitse 3', link: '/stuff/16', image: sketch3 },
-  { id: 17, title: 'Skitse 4', link: '/stuff/17', image: sketch4 },
-  { id: 18, title: 'Skitse 5', link: '/stuff/18', image: sketch5 }
+  { id: 14, title: 'Kuglepenstegning 1', link: '/stuff/14', image: sketch1 },
+  { id: 15, title: 'Kuglepenstegning 2', link: '/stuff/15', image: sketch2 },
+  { id: 16, title: 'Kuglepenstegning 3', link: '/stuff/16', image: sketch3 },
+  { id: 17, title: 'Kuglepenstegning 4', link: '/stuff/17', image: sketch4 },
+  { id: 18, title: 'Kuglepenstegning 5', link: '/stuff/18', image: sketch5 }
 ]
