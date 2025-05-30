@@ -46,7 +46,7 @@
 }
 
 /* less than 800px = go down to one per row */
-@media (max-width: 800px) {
+@media (max-width: 768px) {
   .home-highlights {
     grid-template-columns: 1fr;
   }

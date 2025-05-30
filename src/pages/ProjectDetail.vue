@@ -69,24 +69,30 @@ export default {
 <style scoped>
 .project-detail {
   display: grid;
-  grid-template-columns: repeat(12,1fr);
-  gap: clamp(1rem,2vw,2rem);
+  grid-template-columns: repeat(12, 1fr);
+  gap: var(--space-md);
 }
 
 /* 2) intro + hero */
 .detail-intro {
   grid-column: 1 / -1;
   display: grid;
-  grid-template-columns: repeat(12,1fr);
-  gap: clamp(1rem,2vw,2rem);
+  grid-template-columns: repeat(12, 1fr);
+  gap: var(--space-md);
   color: var(--text-clr);
   font-family: Poppins, sans-serif;
   font-size: var(--fs-sm);
   align-items: start;
 }
 
-.detail-text { grid-column: 1 / 7; }
-.detail-image { grid-column: 7 / -1; }
+.detail-text {
+  grid-column: 1 / 7;
+}
+
+.detail-image {
+  grid-column: 7 / -1;
+}
+
 .detail-image img {
   width: 100%;
   aspect-ratio: 1 / 1;
@@ -94,21 +100,23 @@ export default {
 }
 
 .detail-text p {
-  margin: 0; 
+  margin: 0;
 }
 
 /* thumbs */
 .detail-thumbs {
   grid-column: 1 / -1;
   display: grid;
-  grid-template-columns: repeat(3,1fr);
-  gap: clamp(1rem,2vw,2rem);
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-md);
 }
+
 .detail-thumb img {
   width: 100%;
   aspect-ratio: 1 / 1;
   object-fit: cover;
 }
+
 .project-detail.page-grid {
   align-items: start;
 }
@@ -117,12 +125,34 @@ export default {
 .detail-body {
   grid-column: 1 / -1;
 }
+
 .detail-body p {
-  margin-bottom: clamp(0.75rem,3vw, 3.5rem);
+  margin-bottom: var(--space-lg);
   line-height: 1.6;
   color: var(--text-clr);
   font-family: Poppins, sans-serif;
   font-size: var(--fs-sm);
+}
+
+/* ========== RESPONSIVE STYLES ========== */
+
+/* Under 768px: text + image full width, stacked */
+@media (max-width: 768px) {
+  .detail-text {
+    grid-column: 1 / -1;
+  }
+
+  .detail-image {
+    grid-column: 1 / -1;
+    margin-top: var(--space-sm);
+  }
+}
+
+/* Under 509px: thumbs in one column */
+@media (max-width: 509px) {
+  .detail-thumbs {
+    grid-template-columns: 1fr;
+  }
 }
 
 
