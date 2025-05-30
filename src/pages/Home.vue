@@ -23,7 +23,7 @@
   components: { Hero, HomeHighlights },
   computed: {
     highlights() {
-      return workProjects.slice(0, 3)
+      return workProjects.slice(2, 4)
     }
   }
 }
