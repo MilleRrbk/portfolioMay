@@ -12,25 +12,36 @@
     </section>
 
     <!--  thumbs -->
-    <section class="detail-thumbs page-grid">
-      <div
-        v-for="(img,i) in project.thumbs"
-        :key="i"
-        class="detail-thumb"
-      >
-        <img :src="img" :alt="project.title + ' thumb ' + (i+1)" />
-      </div>
-    </section>
+    <section
+  class="detail-thumbs page-grid"
+  :class="{ 'thumbs-few': project.thumbs.length <= 2 }"
+>
+  <div
+    v-for="(img, i) in project.thumbs"
+    :key="i"
+    class="detail-thumb"
+  >
+    <img :src="img" :alt="project.title + ' thumb ' + (i + 1)" />
+  </div>
+</section>
 
     <!--  moreText -->
     <section class="detail-body">
-      <p v-for="(line,i) in bodyLines" :key="i">{{ line }}</p>
+  <p v-for="(line, i) in bodyLines" :key="i" v-html="line"></p>
+</section>
+
+    <section>
+      <div class="page-title">
+      <p>Process</p>
+    </div>
     </section>
 
      <!-- thumbs2 -->
 <section
   v-if="project.thumbs2?.length"
-  class="detail-thumbs">
+  class="detail-thumbs page-grid"
+  :class="{ 'thumbs-few': project.thumbs2.length <= 2 }"
+>
   <div 
     v-for="(img, i) in project.thumbs2"
     :key="'thumb2-' + i"
@@ -39,15 +50,16 @@
       :src="img" 
       :alt="`${project.title} ekstra thumb ${i + 1}`">
   </div>
+
 </section>
      <!-- moretext2 -->
-     <section
+    <section
   v-if="project.moreText2"
   class="detail-body">
   <p
     v-for="(line, i) in moreText2Lines"
-    :key="'more2-' + i">
-    {{ line }}
+    :key="'more2-' + i"
+    v-html="line">
   </p>
 </section>
 
@@ -87,6 +99,8 @@ export default {
 
 .detail-text {
   grid-column: 1 / 7;
+  margin-right: var(--space-lg);
+
 }
 
 .detail-image {
@@ -111,6 +125,10 @@ export default {
   gap: var(--space-md);
 }
 
+.detail-thumbs.thumbs-few {
+  grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+}
+
 .detail-thumb img {
   width: 100%;
   aspect-ratio: 1 / 1;
@@ -127,7 +145,7 @@ export default {
 }
 
 .detail-body p {
-  margin-bottom: var(--space-lg);
+  margin-bottom: 0;
   line-height: 1.6;
   color: var(--text-clr);
   font-family: Poppins, sans-serif;
@@ -150,10 +168,12 @@ export default {
 
 /* Under 509px: thumbs in one column */
 @media (max-width: 509px) {
-  .detail-thumbs {
-    grid-template-columns: 1fr;
+  .detail-thumbs,
+  .detail-thumbs.thumbs-few {
+    grid-template-columns: 1fr !important;
   }
 }
+
 
 
 </style>

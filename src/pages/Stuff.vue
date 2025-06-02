@@ -3,7 +3,7 @@
 
     <h1 class="page-title">Andet</h1>
     <p class="page-intro">
-      Her finder du en kollektion af mine analoge værker keramik, malerier og tegninger. 
+      Her finder du en kollektion af mine analoge værker - alt fra keramik til malerier og tegninger. 
     </p>
 
     <!-- grid of non-clickable cards -->

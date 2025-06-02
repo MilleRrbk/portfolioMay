@@ -1,7 +1,8 @@
 <template>
   <div class="work page-grid">
     <h1 class="page-title">Projekter</h1>
-    <p class="page-intro">Velkommen til min portfolio. Her kan du se hvilke projekter jeg har lavet henover de sidste to år, både skolerelateret og personligt. <br><br>Læs mere om mine arbejdsprocesser under hvert projekt</p>
+    <p class="page-intro">Velkommen til min portfolio. Her har jeg samlet udvalgte projekter fra både studiet og min fritid. <br><br>Klik dig ind på hvert projekt for at læse om proces, værktøjer og designvalg.
+</p>
     <ShowcaseGrid :items="workItems" />
   </div>
 </template>

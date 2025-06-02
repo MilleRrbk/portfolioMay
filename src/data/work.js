@@ -20,8 +20,13 @@ import kaffemikFinalScene from '@/assets/imgs/projekter/kaffemik/kaffemik-finals
 import k1 from '@/assets/imgs/projekter/kaffemik/kaffemik1.png'
 import k2 from '@/assets/imgs/projekter/kaffemik/kaffemik2.png'
 import k3 from '@/assets/imgs/projekter/kaffemik/kaffemik3.png'
+import k4 from '@/assets/imgs/projekter/kaffemik/k5.png'
+import k5 from '@/assets/imgs/projekter/kaffemik/k6.png'
 import kP1 from '@/assets/imgs/projekter/kaffemik/kaffemik-process1.png'
 import kP2 from '@/assets/imgs/projekter/kaffemik/kaffemik-process2.png'
+import kP3 from '@/assets/imgs/projekter/kaffemik/kP3.png'
+import kP4 from '@/assets/imgs/projekter/kaffemik/kP4.png'
+import kP5 from '@/assets/imgs/projekter/kaffemik/kP5.png'
 
 //eternal harvest
 import eh1 from '@/assets/imgs/projekter/threejs-eternalharvest/eh1.png'
@@ -59,20 +64,23 @@ export const workProjects = [
     slug: 'long-island',
     title: 'Long Island - 3D scene', 
     heroImage: liFULL, 
-    longIntro: 'I vores forløb om 3D-modellering, skulle vi lave en ø i Blender. <br><br>Jeg valgte at lave en surealistisk ø med intense farver og lange hunde.<br><br>Vi skulle rendere et totalbillede og nogle closeups.<br><br>Selve øen inviterer os ind i et skævt univers, med humor og underlige væsner. <br><br>Farver, lys og materialer bidrager til en kontrast mellem det søde og absurde.',
-    thumbs: [ liT1, liT2, liT3],
-    moreText: 'These are the closeup renders of my project',
+    longIntro: 'I et forløb om 3D-modellering, arbejdede vi med at skabe vores egen ø i Blender. <br><br>Jeg valgte at designe en surealistisk ø fyldt med intense farver og lange hunde. Øen inviterer os med ind i et mystisk univers med både humor og absurditet.<br><br>Opgaven bestod i at rendere både et totalbillede og flere closeups',
+    thumbs: [ liT1, liT2],
+    moreText: 'Closeup renderingerne trækker os tættere ind i hundenes univers. Form og materialer er nu i fokus, og giver mulighed for at udforske rum og følelser.',
     thumbs2: [liP1, liP2, liP3],
-    moreText2:'hej',
+    moreText2:'Jeg startede med idéudvikling og en masse skitser, og begyndte derefter at modellere mine low-poly figurer i Blender. Da det var mit første projekt i programmet, eksperimenterede jeg meget undervejs. Resultatet blev en række ukonventionelle modeller - men jeg lærte en masse om Blender og lykkedes med at føre min idé helt i mål.',
   },
   
   { id: 2, 
     slug: 'kaffe-mik',
-    title: 'Experience site - Kaffemik', 
+    title: 'Virtuel kaffemik - Grønlandsk gæstfrihed', 
     heroImage: kaffemikFinalScene, 
-    longIntro: 'I denne opgave, skulle vi lave et oplevelsessite, som omhandlede Grønland',
+    longIntro: 'I dette experiencesite inviteres brugeren ind i et grønlandsk hjem til en virtuel kaffemik - en uformel og traditionsrig sammenkomst med kaffe, kage og personlige fortællinger. <br><br>Gennem interaktive objekter i rummet kan man udforske små historier om Grønlands kultur, natur og hverdagsliv. <br><br>Projektet er udviklet i Blender og Three.js med en varm, low-poly æstetik, som en slags kulturformidling gennem interaktiv storytelling og 3D.',
     thumbs: [ k3, k1, k2 ],
-    moreText: 'These are the closeup renders of my project',  },
+    moreText: 'Interaktive objekter lyser op, så brugeren ved hvad der kan klikkes på. Det gøres nemt at gå på opdagelse i scenen', 
+    thumbs2: [kP3, kP4, kP5],
+    moreText2:'Jeg begyndte med research i kaffemik-traditionen og indsamlede referencer til grønlandske hjem, genstande og stemninger. På baggrund af dette lavede jeg skitser og planlagde rummets opsætning, indhold og fortællinger.<br><br>Herefter byggede jeg scenen i Blender og gav objekterne en pastelpræget farvepalette for at skabe en blød og hyggelig stemning.<br><br>Jeg fokuserede på en tydelig komposition og genkendelige objekter med strategisk placering, så de indbød til interaktion og nysgerrighed.<br><br>Efter modelleringen eksporterede jeg hele scenen som glTF og importerede den til mit Three.js-projekt. Her begyndte jeg at eksperimentere med lys og kameravinkler, så brugeren føler sig til stede i rummet.<br><br>Jeg gjorde udvalgte objekter klikbare med raycasting og bandt dem op til små fortællinger.<br><br><br><b><u>Værktøjer:</u></b><br><br>Blender (3D-modellering)<br><br>Three.js (webbaseret 3D og interaktion)<br><br>HTML, CSS & JavaScript<br><br>VS Code (kodeeditor)',
+   },
   
   { id: 3, 
     slug: 'eternal-harvest',
