@@ -4,6 +4,7 @@ import ide     from '@/assets/imgs/projekter/algo-camo/ide.jpeg'
 //studiekort
 import studieKort from '@/assets/imgs/projekter/studiekort/studieKort.png'
 
+
 //long island
 import liFULL from '@/assets/imgs/projekter/long-island/liFULL.png'
 
@@ -59,7 +60,51 @@ import WIBidentitet from '@/assets/imgs/projekter/2eksamen/WIBidentitet.png'
 //3. eksamen - balance
 import bLogo from '@/assets/imgs/projekter/3eksamen/bLogo.png'
 
+//projection mapping - fortolkning af breve til fremtiden
+import PMTarmPic from '@/assets/imgs/projekter/projectionmapping/PMtarmpic.JPG'
+
+//4. eksamen - Havet under pres
+import hupFortid from '@/assets/imgs/projekter/HUP/HUPfortid.png'
+import hupFremtid from '@/assets/imgs/projekter/HUP/HUPfremtid.png'
+import hupFremtid2 from '@/assets/imgs/projekter/HUP/HUPfremtid2.png'
+import hupHummer from '@/assets/imgs/projekter/HUP/HUPhummer.png'
+import hupNet from '@/assets/imgs/projekter/HUP/HUPnet.png'
+import hupSkib from '@/assets/imgs/projekter/HUP/HUPskib.png'
+import hupTorben from '@/assets/imgs/projekter/HUP/HUPTorben.png'
+import hupTrawl from '@/assets/imgs/projekter/HUP/HUPtrawl.png'
+import hupMockup from '@/assets/imgs/projekter/HUP/mockupEdit.png'
+import hupVisuelStil from '@/assets/imgs/projekter/HUP/visuelstil.png'
+import hupMockupEdit from '@/assets/imgs/projekter/HUP/mockupEdit.png'
+import hupUnityView from '@/assets/imgs/projekter/HUP/unitySS.png'
+import hupVR from '@/assets/imgs/projekter/HUP/VRTest.jpg'
+import hupMetaView from '@/assets/imgs/projekter/HUP/metaView.jpg'
+import hupForside from '@/assets/imgs/projekter/HUP/HUPForside.png'
+
 export const workProjects = [
+  { id: 0, 
+    slug: 'HavetUnderPres',
+    title: 'Havet under pres – VR oplevelse', 
+    heroImage: hupForside, 
+    longIntro: 'Til mit 2. års eksamensprojekt skabte jeg – i samarbejde med min klassekammerat – en narrativ og immersiv VR-oplevelse, der formidler konsekvenserne af overfiskeri i de danske farvande for skoleelever i alderen 12–13 år. <br><br>Projektet tager udgangspunkt i en <u>fiktiv</u> formidlingsopgave for Videnskab.dk. <br><br>Man guides gennem havets fortid, nutid og fremtid af en animeret fisk ved navn Torben, og oplever forandringerne i havmiljøet på tæt hold. <br><br>Oplevelsen er designet og udviklet i Unity med fokus på stemning, worldbuilding, lyddesign og målgruppeinvolvering.',
+    thumbs: [ hupHummer, hupFortid, hupSkib],
+    moreText: 'VR-brugeren befinder sig på havbunden, mens historien udfolder sig gennem guiden - Torben, lydeffekter og visuelle ændringer i miljøet. <br><br>Oplevelsen foregår på Meta Quest 3 og kombinerer 3D-univers, interaktive elementer og en fortælling om overfiskeriets konsekvenser.<br><br>Undervejs møder brugeren små interaktioner, der understøtter fortællingen – f.eks. ved at hive i en fiskekrog eller samle døde fisk ud af et net. <br><br>Vi har haft særlig fokus på at balancere teknisk funktionalitet med æstetisk udtryk og målgruppeforståelse.<br><br>',
+    thumbs25: [hupNet, hupTrawl, hupTorben],
+    thumbs3: [hupVisuelStil],
+    thumbs2: [hupUnityView, hupVR, hupMetaView],
+    moreText2: 'Jeg har modelleret fisken Torben, bundtrawlsnettet og fiskekrogen, mens flere af de øvrige 3D-modeller er hentet fra licensfrie biblioteker. <br><br>Oplevelsen er bygget i Unity med C#-scripts, der håndterer VR-optimering, sceneovergange og UI. <br><br>Projektet blev lavet i forlængelse af et Unity-forløb på studiet – men vi havde aldrig arbejdet med VR før, så det var en stor udfordring, men også både sjovt og lærerigt. <br><br>AI har hjulpet med at generere visuelle mockups, assistere med kode og til problemløsning under udviklingen. <br><br><br><b><u>Værktøjer:</u></b><br>Unity (VR-udvikling)<br>Blender (3D-modellering)<br>Adobe Audition (lydredigering)<br>ChatGPT (AI-assistance)<br>Meta Quest 3 (test & deployment)<br><br>',
+
+  },
+  { id: 3, 
+    slug: 'eternal-harvest',
+    title: 'Eternal Harvest - three.js', 
+    heroImage: eh1,  
+    longIntro: 'The Eternal Harvest er en interaktiv 3D-fortælling skabt i Three.js og Blender, hvor spilleren lander på en fjern planet i jagten på en svamp, der siges at kunne give evigt liv til mennesket. <br><br>Gennem atmosfærisk visualisering, klikbare objekter og spor fra fortiden, udfolder historien sig gradvist. <br><br>Spilleren opdager efterladte noter og forladt teknologi, som afslører en uhyggelig sandhed - tidligere ekspeditioner er aldrig vendt hjem - fanget i en evig tilstand mellem liv og forfald, hvor tiden ikke længere giver mening. <br><br>Fortællingen udforsker temaer som kontrol, udødelighed og konsekvenserne af menneskelig grådighed.',
+    thumbs: [ eternalharvest, eh2, eh3 ],
+    moreText: 'These are the closeup renders of my project',  
+    thumbs2: [ eh4, eh6, eh7],
+    moreText2: 'hej',
+  },
+  
   { id: 1, 
     slug: 'long-island',
     title: 'Long Island - 3D scene', 
@@ -79,19 +124,10 @@ export const workProjects = [
     thumbs: [ k3, k1, k2 ],
     moreText: 'Interaktive objekter lyser op, så brugeren ved hvad der kan klikkes på. Det gøres nemt at gå på opdagelse i scenen', 
     thumbs2: [kP3, kP4, kP5],
-    moreText2:'Jeg begyndte med research i kaffemik-traditionen og indsamlede referencer til grønlandske hjem, genstande og stemninger. På baggrund af dette lavede jeg skitser og planlagde rummets opsætning, indhold og fortællinger.<br><br>Herefter byggede jeg scenen i Blender og gav objekterne en pastelpræget farvepalette for at skabe en blød og hyggelig stemning.<br><br>Jeg fokuserede på en tydelig komposition og genkendelige objekter med strategisk placering, så de indbød til interaktion og nysgerrighed.<br><br>Efter modelleringen eksporterede jeg hele scenen som glTF og importerede den til mit Three.js-projekt. Her begyndte jeg at eksperimentere med lys og kameravinkler, så brugeren føler sig til stede i rummet.<br><br>Jeg gjorde udvalgte objekter klikbare med raycasting og bandt dem op til små fortællinger.<br><br><br><b><u>Værktøjer:</u></b><br><br>Blender (3D-modellering)<br><br>Three.js (webbaseret 3D og interaktion)<br><br>HTML, CSS & JavaScript<br><br>VS Code (kodeeditor)<br><br>',
+    moreText2:'Jeg begyndte med research i kaffemik-traditionen og indsamlede referencer til grønlandske hjem, genstande og stemninger. På baggrund af dette lavede jeg skitser og planlagde rummets opsætning, indhold og fortællinger.<br><br>Herefter byggede jeg scenen i Blender og gav objekterne en pastelpræget farvepalette for at skabe en blød og hyggelig stemning.<br><br>Jeg fokuserede på en tydelig komposition og genkendelige objekter med strategisk placering, så de indbød til interaktion og nysgerrighed.<br><br>Efter modelleringen eksporterede jeg hele scenen som glTF og importerede den til mit Three.js-projekt. Her begyndte jeg at eksperimentere med lys og kameravinkler, så brugeren føler sig til stede i rummet.<br><br>Jeg gjorde udvalgte objekter klikbare med raycasting og bandt dem op til små fortællinger.<br><br><br><b><u>Værktøjer:</u></b><br>Blender (3D-modellering)<br>Three.js (webbaseret 3D og interaktion)<br>HTML, CSS & JavaScript<br>VS Code (kodeeditor)<br><br>',
    },
   
-  { id: 3, 
-    slug: 'eternal-harvest',
-    title: 'Eternal Harvest - three.js', 
-    heroImage: eh1,  
-    longIntro: 'The Eternal Harvest er en interaktiv 3D-fortælling skabt i Three.js og Blender, hvor spilleren lander på en fjern planet i jagten på en svamp, der siges at kunne give evigt liv til mennesket. <br><br>Gennem atmosfærisk visualisering, klikbare objekter og spor fra fortiden, udfolder historien sig gradvist. <br><br>Spilleren opdager efterladte noter og forladt teknologi, som afslører en uhyggelig sandhed - tidligere ekspeditioner er aldrig vendt hjem - fanget i en evig tilstand mellem liv og forfald, hvor tiden ikke længere giver mening. <br><br>Fortællingen udforsker temaer som kontrol, udødelighed og konsekvenserne af menneskelig grådighed.',
-    thumbs: [ eternalharvest, eh2, eh3 ],
-    moreText: 'These are the closeup renders of my project',  
-    thumbs2: [ eh4, eh6, eh7],
-    moreText2: 'hej',
-  },
+
   
     //{ id: 4, 
     //slug: 'studie-kort',
@@ -144,13 +180,14 @@ export const workProjects = [
   moreText: 'These are the closeup renders of my project',  
 },
   { id: 10, 
-  slug: 'data-visualisering',
-  title: 'Datavisualisering', 
-  heroImage: bLogo,  
-  longIntro: 'Dette er en nakkesmerteapp',
+  slug: 'projecttion-mapping',
+  title: 'Projection mapping', 
+  heroImage: PMTarmPic,  
+  longIntro: 'Dette er ting',
   thumbs: [ bLogo ],
   moreText: 'These are the closeup renders of my project',  
 },
+
 ]
 
 

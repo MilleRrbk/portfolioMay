@@ -14,6 +14,7 @@ import ProjectDetail from '@/pages/ProjectDetail.vue'
 import { workProjects } from '@/data/work.js'
 import { stuffItems   } from '@/data/stuff.js'
 
+
 const routes = [
   { path: '/', 
     name: 'Home',

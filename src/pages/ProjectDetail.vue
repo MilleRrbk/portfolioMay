@@ -30,6 +30,38 @@
   <p v-for="(line, i) in bodyLines" :key="i" v-html="line"></p>
 </section>
 
+     <!-- thumbs2.5 -->
+     <section
+  v-if="project.thumbs25?.length"
+  class="detail-thumbs page-grid"
+  :class="{ 'thumbs-few': project.thumbs25.length <= 2 }"
+>
+  <div 
+    v-for="(img, i) in project.thumbs25"
+    :key="'thumb2-' + i"
+    class="detail-thumb">
+    <img 
+      :src="img" 
+      :alt="`${project.title} ekstra thumb ${i + 1}`">
+  </div>
+</section>
+
+<!-- thumbs3 -->
+<section
+  v-if="project.thumbs3?.length"
+  class="detail-thumbs detail-thumbs-free page-grid"
+  :class="{ 'thumbs-few': project.thumbs3.length <= 2 }"
+>
+  <div 
+    v-for="(img, i) in project.thumbs3"
+    :key="'thumb3-' + i"
+    class="detail-thumb">
+    <img 
+      :src="img" 
+      :alt="`${project.title} tredje thumb ${i + 1}`">
+  </div>
+</section>
+
     <section>
       <div class="page-title">
       <p>Process</p>
@@ -150,6 +182,14 @@ export default {
   color: var(--text-clr);
   font-family: Poppins, sans-serif;
   font-size: var(--fs-sm);
+}
+
+.detail-thumbs-free .detail-thumb img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: auto;
+  object-fit: contain;
+  margin-top: var(--space-lg);
 }
 
 /* ========== RESPONSIVE STYLES ========== */
