@@ -109,13 +109,14 @@
     --space-2xl: 3rem;
     --space-3xl: 4.5rem;
     }
+    
   }
 
 /* små mobiler */
 @media (max-width: 509px) {
   :root {
     /*font size*/
-    --fs-xs: 0.45rem;
+    --fs-xs: 0.50rem;
     --fs-sm: 0.75rem;
     --fs-md: 0.9rem;
     --fs-ml: 1rem;
@@ -134,6 +135,7 @@
     --space-2xl: 2.5rem;
     --space-3xl: 3.5rem;
   }
+  
 }
 /* general styling */
 html {

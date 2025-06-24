@@ -90,6 +90,12 @@
     border: none;
     padding: 0;
   }
+  
+}
+@media (max-width: 768px) {
+  .nav-btn {
+    border: none;
+  }
 }
 
 .nav-btn:hover {
