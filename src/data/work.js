@@ -48,7 +48,7 @@ import eh5 from '@/assets/imgs/projekter/threejs-eternalharvest/eh5.png'
 import eh6 from '@/assets/imgs/projekter/threejs-eternalharvest/eh6.png'
 import eh7 from '@/assets/imgs/projekter/threejs-eternalharvest/eh7.png'
 import ehPoster from '@/assets/imgs/projekter/threejs-eternalharvest/ehPoster.png'
-import ehMovie from '@/assets/mp4s/ehMovie.mp4'
+import ehMovie from '@/assets/mp4s/ehmovie.mp4'
 
 //sushi train
 import sushitrain from '@/assets/imgs/projekter/sushi-train/sushitrain.PNG'
