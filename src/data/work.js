@@ -1,3 +1,8 @@
+//video test
+import fiskevideo     from '@/assets/mp4s/fishVideo.mp4'
+//import fiskevideoPoster     from '@/assets/imgs/bitmap'
+
+
 // all data that can be shown on WORK page
 import ide     from '@/assets/imgs/projekter/algo-camo/ide.jpeg'
 
@@ -28,6 +33,7 @@ import kP2 from '@/assets/imgs/projekter/kaffemik/kaffemik-process2.png'
 import kP3 from '@/assets/imgs/projekter/kaffemik/kP3.png'
 import kP4 from '@/assets/imgs/projekter/kaffemik/kP4.png'
 import kP5 from '@/assets/imgs/projekter/kaffemik/kP5.png'
+import kfull from '@/assets/imgs/projekter/kaffemik/KMfull.png'
 
 //eternal harvest
 import eh1 from '@/assets/imgs/projekter/threejs-eternalharvest/eh1.png'
@@ -35,7 +41,7 @@ import eh1 from '@/assets/imgs/projekter/threejs-eternalharvest/eh1.png'
 import eternalharvest from '@/assets/imgs/projekter/threejs-eternalharvest/eternalharvest.png'
 import eh2 from '@/assets/imgs/projekter/threejs-eternalharvest/eh2.png'
 import eh3 from '@/assets/imgs/projekter/threejs-eternalharvest/eh3.png'
-import eh4 from '@/assets/imgs/projekter/threejs-eternalharvest/eh4.png'
+import eh4 from '@/assets/imgs/projekter/threejs-eternalharvest/eh8.png'
 import eh5 from '@/assets/imgs/projekter/threejs-eternalharvest/eh5.png'
 import eh6 from '@/assets/imgs/projekter/threejs-eternalharvest/eh6.png'
 import eh7 from '@/assets/imgs/projekter/threejs-eternalharvest/eh7.png'
@@ -85,13 +91,15 @@ export const workProjects = [
     slug: 'HavetUnderPres',
     title: 'Havet under pres – VR oplevelse', 
     heroImage: hupForside, 
+    description: 'En Unity-VR oplevelse, hvor du følger en fisk gennem havets tidslinje, interagerer med miljøet og opdager overfiskeriets konsekvenser.',
     longIntro: 'Til mit 2. års eksamensprojekt skabte jeg – i samarbejde med min klassekammerat – en narrativ og immersiv VR-oplevelse, der formidler konsekvenserne af overfiskeri i de danske farvande for skoleelever i alderen 12–13 år. <br><br>Projektet tager udgangspunkt i en <u>fiktiv</u> formidlingsopgave for Videnskab.dk. <br><br>Man guides gennem havets fortid, nutid og fremtid af en animeret fisk ved navn Torben, og oplever forandringerne i havmiljøet på tæt hold. <br><br>Oplevelsen er designet og udviklet i Unity med fokus på stemning, worldbuilding, lyddesign og målgruppeinvolvering.',
     thumbs: [ hupHummer, hupFortid, hupSkib],
     moreText: 'VR-brugeren befinder sig på havbunden, mens historien udfolder sig gennem guiden - Torben, lydeffekter og visuelle ændringer i miljøet. <br><br>Oplevelsen foregår på Meta Quest 3 og kombinerer 3D-univers, interaktive elementer og en fortælling om overfiskeriets konsekvenser.<br><br>Undervejs møder brugeren små interaktioner, der understøtter fortællingen – f.eks. ved at hive i en fiskekrog eller samle døde fisk ud af et net. <br><br>Vi har haft særlig fokus på at balancere teknisk funktionalitet med æstetisk udtryk og målgruppeforståelse.<br><br>',
     thumbs25: [hupNet, hupTrawl, hupTorben],
     thumbs3: [hupVisuelStil],
+    video: [fiskevideo],
     thumbs2: [hupUnityView, hupVR, hupMetaView],
-    moreText2: 'Jeg har modelleret fisken Torben, bundtrawlsnettet og fiskekrogen, mens flere af de øvrige 3D-modeller er hentet fra licensfrie biblioteker. <br><br>Oplevelsen er bygget i Unity med C#-scripts, der håndterer VR-optimering, sceneovergange og UI. <br><br>Projektet blev lavet i forlængelse af et Unity-forløb på studiet – men vi havde aldrig arbejdet med VR før, så det var en stor udfordring, men også både sjovt og lærerigt. <br><br>AI har hjulpet med at generere visuelle mockups, assistere med kode og til problemløsning under udviklingen. <br><br><br><b><u>Værktøjer:</u></b><br>Unity (VR-udvikling)<br>Blender (3D-modellering)<br>Adobe Audition (lydredigering)<br>ChatGPT (AI-assistance)<br>Meta Quest 3 (test & deployment)<br><br>',
+    moreText2: 'Jeg har modelleret fisken Torben, bundtrawlsnettet og fiskekrogen, mens flere af de øvrige 3D-modeller er hentet fra licensfrie biblioteker. <br><br>Oplevelsen er bygget i Unity med C#-scripts, der håndterer VR-optimering, sceneovergange og UI. <br><br>Projektet blev lavet i forlængelse af et Unity-forløb på studiet – men vi havde aldrig arbejdet med VR før, så det var en stor udfordring, men også både sjovt og lærerigt. <br><br>AI har hjulpet med at generere visuelle mockups, assistere med kode og til problemløsning under udviklingen. <br><br><br><b><u>Værktøjer:</u></b><br>Unity (VR-udvikling)<br>Blender (3D-modellering)<br>Adobe Audition (lydredigering)<br>ChatGPT (AI-assistance)<br>Meta Quest 3 (test & deployment) <br>JetBrains Rider (version control GIT og kodeeditor)<br><br>',
 
   },
   { id: 3, 
@@ -123,6 +131,7 @@ export const workProjects = [
     longIntro: 'I dette experiencesite inviteres brugeren ind i et grønlandsk hjem til en virtuel kaffemik - en uformel og traditionsrig sammenkomst med kaffe, kage og personlige fortællinger. <br><br>Gennem interaktive objekter i rummet kan man udforske små historier om Grønlands kultur, natur og hverdagsliv. <br><br>Projektet er udviklet i Blender og Three.js med en varm, low-poly æstetik, som en slags kulturformidling gennem interaktiv storytelling og 3D.',
     thumbs: [ k3, k1, k2 ],
     moreText: 'Interaktive objekter lyser op, så brugeren ved hvad der kan klikkes på. Det gøres nemt at gå på opdagelse i scenen', 
+    thumbs3: [kfull],
     thumbs2: [kP3, kP4, kP5],
     moreText2:'Jeg begyndte med research i kaffemik-traditionen og indsamlede referencer til grønlandske hjem, genstande og stemninger. På baggrund af dette lavede jeg skitser og planlagde rummets opsætning, indhold og fortællinger.<br><br>Herefter byggede jeg scenen i Blender og gav objekterne en pastelpræget farvepalette for at skabe en blød og hyggelig stemning.<br><br>Jeg fokuserede på en tydelig komposition og genkendelige objekter med strategisk placering, så de indbød til interaktion og nysgerrighed.<br><br>Efter modelleringen eksporterede jeg hele scenen som glTF og importerede den til mit Three.js-projekt. Her begyndte jeg at eksperimentere med lys og kameravinkler, så brugeren føler sig til stede i rummet.<br><br>Jeg gjorde udvalgte objekter klikbare med raycasting og bandt dem op til små fortællinger.<br><br><br><b><u>Værktøjer:</u></b><br>Blender (3D-modellering)<br>Three.js (webbaseret 3D og interaktion)<br>HTML, CSS & JavaScript<br>VS Code (kodeeditor)<br><br>',
    },

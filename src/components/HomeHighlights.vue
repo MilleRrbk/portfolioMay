@@ -18,6 +18,7 @@
         <!-- text block -->
         <div class="home-highlight-text">
           <h3>{{ item.title }}</h3>
+          <p>{{ item.description }}</p>
         </div>
       </router-link>
     </section>
@@ -91,15 +92,23 @@
 .home-highlight-text {
   overflow: hidden;
   display: flex;
+  flex-direction: column;    
   max-height: 100%;
   margin-left: 15px;
 }
 
-  
-  .home-highlight-text h3 {
+.home-highlight-text h3 {
   margin: 0;
   font-family: AzeretMono, sans-serif;
   font-size: var(--fs-ml);
+  color: var(--text-clr);
+}
+
+.home-highlight-text p {
+  margin: 0.5rem 0 0; 
+  font-size: var(--fs-sm);   
+  line-height: 1.4;
+  font-family: Poppins, sans-serif;
   color: var(--text-clr);
 }
   </style>

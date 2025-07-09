@@ -62,6 +62,19 @@
   </div>
 </section>
 
+<!-- video -->
+<section v-if="project.video" class="detail-video">
+  <video
+    controls
+    preload="none"
+    :poster="project.poster || ''"
+    width="100%"
+  >
+    <source :src="project.video" type="video/mp4" />
+    Din browser understøtter ikke video-tagget.
+  </video>
+</section>
+
     <section>
       <div class="page-title">
       <p>Process</p>
@@ -182,6 +195,18 @@ export default {
   color: var(--text-clr);
   font-family: Poppins, sans-serif;
   font-size: var(--fs-sm);
+}
+
+.detail-video {
+  grid-column: 1 / -1;
+  margin-block: var(--space-lg);
+}
+
+.detail-video video {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  border: 1px solid var(--border-clr);
 }
 
 .detail-thumbs-free .detail-thumb img {

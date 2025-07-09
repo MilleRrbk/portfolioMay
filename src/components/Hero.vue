@@ -11,7 +11,7 @@
       ></video>
         <div class="hero-logo">
         <!--inline image here -->
-        <img src="../assets/imgs/logopinkhvid.png"
+        <img src="../assets/imgs/logored.png"
         alt="Mille Rørbæk Portfolio" 
         class="logo"
         />
