@@ -64,16 +64,26 @@
 
 <!-- video -->
 <section v-if="project.video" class="detail-video">
-  <video
-    controls
-    preload="none"
-    :poster="project.poster || ''"
-    width="100%"
-  >
-    <source :src="project.video" type="video/mp4" />
-    Din browser understøtter ikke video-tagget.
-  </video>
-</section>
+      <div class="video-wrapper">
+        <video
+          ref="videoPlayer"
+          preload="none"
+          :poster="project.poster"
+          :controls="controlsVisible"
+          width="100%"
+        >
+          <source :src="project.video" type="video/mp4" />
+          Din browser understøtter ikke video-tagget.
+        </video>
+        <div
+          v-if="!controlsVisible"
+          class="video-overlay"
+          @click="playVideo"
+        >
+          <span class="play-btn">▶︎</span>
+        </div>
+      </div>
+    </section>
 
     <section>
       <div class="page-title">
@@ -115,10 +125,21 @@
 export default {
   name: 'ProjectDetail',
   props: { project: Object },
+  data() {
+    return {
+      controlsVisible: false
+    }
+  },
   computed: {
-    introLines() { return this.project.longIntro.split('\n') },
-    bodyLines()  { return this.project.moreText.split('\n') },
-    moreText2Lines() { return this.project.moreText2?.split('\n') || []}
+    introLines()      { return this.project.longIntro.split('\n') },
+    bodyLines()       { return this.project.moreText.split('\n') },
+    moreText2Lines()  { return this.project.moreText2?.split('\n') || [] }
+  },
+  methods: {
+    playVideo() {
+      this.$refs.videoPlayer.play()
+      this.controlsVisible = true
+    }
   }
 }
 </script>
@@ -215,6 +236,35 @@ export default {
   aspect-ratio: auto;
   object-fit: contain;
   margin-top: var(--space-lg);
+}
+
+.video-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.video-wrapper video {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--border-clr);
+}
+
+.video-overlay {
+  position: absolute;
+  inset: 0; /* top:0; right:0; bottom:0; left:0; */
+  background: rgba(0, 0, 20, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.play-btn {
+  font-size: 4rem;
+  color: #fff;
+  text-shadow: 0 0 10px rgba(0,0,0,0.3);
+  user-select: none;
 }
 
 /* ========== RESPONSIVE STYLES ========== */

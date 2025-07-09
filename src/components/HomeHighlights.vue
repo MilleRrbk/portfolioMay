@@ -18,7 +18,7 @@
         <!-- text block -->
         <div class="home-highlight-text">
           <h3>{{ item.title }}</h3>
-          <p>{{ item.description }}</p>
+          <p v-html="item.longIntro"></p>
         </div>
       </router-link>
     </section>
