@@ -91,7 +91,7 @@ export const workProjects = [
     slug: 'HavetUnderPres',
     title: 'Havet under pres – VR oplevelse', 
     heroImage: hupForside, 
-    description: 'En Unity-VR oplevelse, hvor du følger en fisk gennem havets tidslinje, interagerer med miljøet og opdager overfiskeriets konsekvenser.',
+    description: 'Unity VR-projekt, hvor du følger en fisk gennem havets tidslinje, interagerer med miljøet og opdager overfiskeriets konsekvenser.',
     longIntro: 'Til mit 2. års eksamensprojekt skabte jeg – i samarbejde med min klassekammerat – en narrativ og immersiv VR-oplevelse, der formidler konsekvenserne af overfiskeri i de danske farvande for skoleelever i alderen 12–13 år. <br><br>Projektet tager udgangspunkt i en <u>fiktiv</u> formidlingsopgave for Videnskab.dk. <br><br>Man guides gennem havets fortid, nutid og fremtid af en animeret fisk ved navn Torben, og oplever forandringerne i havmiljøet på tæt hold. <br><br>Oplevelsen er designet og udviklet i Unity med fokus på stemning, worldbuilding, lyddesign og målgruppeinvolvering.',
     thumbs: [ hupHummer, hupFortid, hupSkib],
     moreText: 'VR-brugeren befinder sig på havbunden, mens historien udfolder sig gennem guiden - Torben, lydeffekter og visuelle ændringer i miljøet. <br><br>Oplevelsen foregår på Meta Quest 3 og kombinerer 3D-univers, interaktive elementer og en fortælling om overfiskeriets konsekvenser.<br><br>Undervejs møder brugeren små interaktioner, der understøtter fortællingen – f.eks. ved at hive i en fiskekrog eller samle døde fisk ud af et net. <br><br>Vi har haft særlig fokus på at balancere teknisk funktionalitet med æstetisk udtryk og målgruppeforståelse.<br><br>',

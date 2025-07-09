@@ -92,7 +92,9 @@
 .home-highlight-text {
   overflow: hidden;
   display: flex;
-  flex-direction: column;    
+  flex-direction: column; 
+  flex: 1;
+   
   max-height: 100%;
   margin-left: 15px;
 }
@@ -110,6 +112,80 @@
   line-height: 1.4;
   font-family: Poppins, sans-serif;
   color: var(--text-clr);
+ /* ====== ellipsis på linje-niveau ====== */
+ display: -webkit-box;             /* WebKit-box til clamping */
+  -webkit-box-orient: vertical;     /* lodret stabling */
+  -webkit-line-clamp: 7;            
+  overflow: hidden;                 /* gem resten */
+  text-overflow: ellipsis;          /* vis “…” */
 }
+/* Eksempel: på meget small skærm, kun 2 linjer */
+@media (max-width: 1500px) {
+  .home-highlight-text p {
+    -webkit-line-clamp: 7;
+  }
+}
+@media (max-width: 1370px) {
+  .home-highlight-text p {
+    -webkit-line-clamp: 5;
+  }
+}
+@media (max-width: 1200px) {
+  .home-highlight-text p {
+    -webkit-line-clamp: 4;
+  }
+}
+@media (max-width: 1090px) {
+  .home-highlight-text p {
+    -webkit-line-clamp: 5;
+  }
+}
+@media (max-width: 1040px) {
+  .home-highlight-text p {
+    -webkit-line-clamp: 4;
+  }
+}
+@media (max-width: 940px) {
+  .home-highlight-text p {
+    -webkit-line-clamp: 3;
+  }
+}
+@media (max-width: 873px) {
+  .home-highlight-text p {
+    -webkit-line-clamp: 2;
+  }
+}
+@media (max-width: 825px) {
+  .home-highlight-text p {
+    -webkit-line-clamp: 1;
+  }
+}
+@media (max-width: 768px) {
+  .home-highlight-text p {
+    -webkit-line-clamp: 7;
+  }
+}
+@media (max-width: 425px) {
+  .home-highlight-text p {
+    -webkit-line-clamp: 5;
+  }
+}
+@media (max-width: 380px) {
+  .home-highlight-text p {
+    -webkit-line-clamp: 4;
+  }
+}
+@media (max-width: 340px) {
+  .home-highlight-text p {
+    -webkit-line-clamp: 2;
+  }
+}
+@media (max-width: 310px) {
+  .home-highlight-text p {
+    -webkit-line-clamp: 1;
+  }
+}
+
+
   </style>
   
