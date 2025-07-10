@@ -4,8 +4,6 @@ import fiskevideo     from '@/assets/mp4s/fishVideo.mp4'
 
 
 // all data that can be shown on WORK page
-import ide     from '@/assets/imgs/projekter/algo-camo/ide.jpeg'
-
 //studiekort
 import studieKort from '@/assets/imgs/projekter/studiekort/studieKort.png'
 
@@ -55,26 +53,47 @@ import sushitrain from '@/assets/imgs/projekter/sushi-train/sushitrain.PNG'
 import stP1 from '@/assets/imgs/projekter/sushi-train/stP1.JPG'
 import stP2 from '@/assets/imgs/projekter/sushi-train/stp2.jpeg'
 import stPoster from '@/assets/imgs/projekter/sushi-train/stPoster.png'
+import suji from '@/assets/imgs/projekter/sushi-train/suji.png'
 import stMovie from '@/assets/mp4s/stMovieTrim.mp4'
 
 //drill, spill, kill - sos poster
 import sos from '@/assets/imgs/projekter/sos/sos.png'
 import sos1 from '@/assets/imgs/projekter/sos/sos1.jpeg'
+import sos2 from '@/assets/imgs/projekter/sos/sos2.png'
+import sos3 from '@/assets/imgs/projekter/sos/sos3.png'
+import sosMockup from '@/assets/imgs/projekter/sos/sosmockup.png'
+import sosMockup2 from '@/assets/imgs/projekter/sos/sosmockup2.png'
 
 //algoritmisk camoflague
+import ide from '@/assets/imgs/projekter/algo-camo/ide.jpeg'
+import camo1 from '@/assets/imgs/projekter/algo-camo/camo1.jpeg'
+import camoPoster from '@/assets/imgs/projekter/algo-camo/camoPoster.png'
 import eyes from '@/assets/imgs/projekter/algo-camo/eyes.jpeg'
 import eyesBig from '@/assets/imgs/projekter/algo-camo/eyesBig.jpeg'
 import eyesFull from '@/assets/imgs/projekter/algo-camo/eyesFull.jpeg'
+import camoMovie from '@/assets/mp4s/camoMovie.mp4'
 
 //2. eksamen - while in battle
 import WIBposter from '@/assets/imgs/projekter/2eksamen/WIBposter.png'
 import WIBidentitet from '@/assets/imgs/projekter/2eksamen/WIBidentitet.png'
+import WIBprint from '@/assets/imgs/projekter/2eksamen/WIBprint.png'
+import WIBprint1 from '@/assets/imgs/projekter/2eksamen/WIBprint1.png'
+import WIBprint2 from '@/assets/imgs/projekter/2eksamen/WIBprint2.png'
 
 //3. eksamen - balance
+import bMovie from '@/assets/mp4s/bMovie.mp4'
+import bPoster from '@/assets/imgs/projekter/3eksamen/bPoster.png'
+import bWIP from '@/assets/imgs/projekter/3eksamen/bWIP.png'
+import bWIP2 from '@/assets/imgs/projekter/3eksamen/bWIP2.png'
+import bSketches from '@/assets/imgs/projekter/3eksamen/bSketches.png'
+import bWhole from '@/assets/imgs/projekter/3eksamen/bWhole.png'
+import bMaskot from '@/assets/imgs/projekter/3eksamen/bMaskot.png'
+import bVI from '@/assets/imgs/projekter/3eksamen/bVI.png'
 import bLogo from '@/assets/imgs/projekter/3eksamen/bLogo.png'
 
 //projection mapping - fortolkning af breve til fremtiden
-import PMTarmPic from '@/assets/imgs/projekter/projectionmapping/PMtarmpic.JPG'
+import tarmMovie from '@/assets/imgs/projekter/tarmproject/tarmMovie.mp4'
+import PMTarmPic from '@/assets/imgs/projekter/tarmproject/PMtarmpic.JPG'
 
 //4. eksamen - Havet under pres
 import hupFortid from '@/assets/imgs/projekter/HUP/HUPfortid.png'
@@ -116,7 +135,7 @@ export const workProjects = [
     slug: 'eternal-harvest',
     title: 'Eternal Harvest - three.js', 
     heroImage: eh1,  
-    longIntro: 'The Eternal Harvest er en interaktiv 3D-fortælling skabt i Three.js og Blender, hvor brugeren lander på en fjern planet i jagten på en svamp, der siges at kunne give evigt liv til mennesket. <br><br>Historien udfolder sig gradvist gennem atmosfærisk visualisering, klikbare objekter og spor fra fortiden. <br><br>Spilleren opdager efterladte noter og forladt teknologi, som tyder på at tidligere ekspeditioner aldrig er vendt hjem - fanget i en evig tilstand mellem liv og forfald, hvor tiden ikke længere giver mening. <br><br>Fortællingen udforsker temaer som kontrol, udødelighed og konsekvenserne af menneskelig grådighed.',
+    longIntro: 'Eternal Harvest er en interaktiv 3D-fortælling skabt i Three.js og Blender, hvor brugeren lander på en fjern planet i jagten på en svamp, der siges at kunne give evigt liv til mennesket. <br><br>Historien udfolder sig gradvist gennem atmosfærisk visualisering, klikbare objekter og spor fra fortiden. <br><br>Spilleren opdager efterladte noter og forladt teknologi, som tyder på at tidligere ekspeditioner aldrig er vendt hjem - fanget i en evig tilstand mellem liv og forfald, hvor tiden ikke længere giver mening. <br><br>Fortællingen udforsker temaer som kontrol, udødelighed og konsekvenserne af menneskelig grådighed.',
     thumbs: [ eternalharvest, eh2, eh3 ],
     moreText: '',  
     poster: [ehPoster],
@@ -146,7 +165,7 @@ export const workProjects = [
     poster: [kPoster],
     video: [kMovie],
     thumbs2: [kP3, kProcess, kP5],
-    moreText2:'Jeg begyndte med research i kaffemik-traditionen og indsamlede referencer til grønlandske hjem, genstande og stemninger. På baggrund af dette lavede jeg skitser og planlagde rummets opsætning, indhold og fortællinger.<br><br>Herefter byggede jeg scenen i Blender og gav objekterne en pastelpræget farvepalette for at skabe en blød og hyggelig stemning.<br><br>Jeg fokuserede på en tydelig komposition og genkendelige objekter med strategisk placering, så de indbød til interaktion og nysgerrighed.<br><br>Efter modelleringen eksporterede jeg hele scenen som glTF og importerede den til mit Three.js-projekt. Her begyndte jeg at eksperimentere med lys og kameravinkler, så brugeren føler sig til stede i rummet.<br><br>Jeg gjorde udvalgte objekter klikbare med raycasting og bandt dem op til små fortællinger.<br><br><br><b><u>Værktøjer:</u></b><br>Blender (3D-modellering)<br>Three.js (webbaseret 3D og interaktion)<br>HTML, CSS & JavaScript<br>VS Code (kodeeditor)<br><br>',
+    moreText2:'Jeg begyndte med research i kaffemik-traditionen og indsamlede referencer til grønlandske hjem, genstande og stemninger. På baggrund af dette lavede jeg skitser og planlagde rummets opsætning, indhold og fortællinger.<br><br>Herefter byggede jeg scenen og alle modeller i Blender og gav objekterne en pastelpræget farvepalette for at skabe en blød og hyggelig stemning.<br><br>Jeg fokuserede på en tydelig komposition og genkendelige objekter med strategisk placering, så de indbød til interaktion og nysgerrighed.<br><br>Efter modelleringen eksporterede jeg hele scenen som glTF og importerede den til mit Three.js-projekt. Her begyndte jeg at eksperimentere med lys og kameravinkler, så brugeren føler sig til stede i rummet.<br><br>Jeg gjorde udvalgte objekter klikbare med raycasting og bandt dem op til små fortællinger.<br><br><br><b><u>Værktøjer:</u></b><br>Blender (3D-modellering)<br>Three.js (webbaseret 3D og interaktion)<br>HTML, CSS & JavaScript<br>VS Code (kodeeditor)<br><br>',
    },
   
 
@@ -164,45 +183,59 @@ export const workProjects = [
     slug: 'sushi-train',
     title: 'Sushi Train - 3D model', 
     heroImage: sushitrain,  
-    longIntro: '"Sushitrain" er et personligt 3D-projekt, som jeg fik idéen til efter at have taget et billede af metroskinnerne ved DR-Byen. <br><br>Fisken, som jeg har 3D-modelleret, skulle placeres på skinnerne og animeres, så den ligner metroen, der kommer til sit næste stop. <br><br>Kontrasten mellem fisken og baggrunden skaber et surrealistisk og sjovt visuelt miljø.',
-    thumbs: [ stP1, stP2 ],
+    longIntro: '"Sushi Train" er et personligt 3D-projekt, som jeg fik idéen til efter at have taget et billede af metroskinnerne ved DR-Byen. <br><br>Fisken, som jeg har 3D-modelleret, skulle placeres på skinnerne og animeres, så den ligner metroen, der kommer til sit næste stop. <br><br>Kontrasten mellem fisken og baggrunden skaber et surrealistisk og sjovt visuelt scenarie.',
+    thumbs: [ stP1, suji, stP2 ],
     moreText: '',  
     poster: [stPoster],
     video: [stMovie],
-    moreText2: 'Jeg arbejdede med projektet i Blender, hvor jeg først modellerede fisken og herefter brugte UV-wrap til at give den sin tekstur. <br><br>For at sætte graffiti-tagget fast på modellen brugte jeg en shrinkwrap-modifier. Herefter animerede jeg fisken med en displace-modifier og en bevægelse fra x til y. <br> Lys og tåge blev sat op i scenen, så den endelige rendering fik det ønskede udtryk.<br><br><br><b><u>Værktøjer:</u></b><br>Blender (3D-modellering)<br><br>',  
+    moreText2: 'Jeg arbejdede med projektet i Blender, hvor jeg først modellerede fisken og herefter brugte UV-wrap til at give den sin tekstur. <br><br>For at sætte graffiti-tagget fast på modellen brugte jeg en shrinkwrap-modifier. Herefter animerede jeg fisken med en displace-modifier og en bevægelse fra x til y. <br> Lys og tåge blev sat op i scenen, så den endelige rendering fik det ønskede udtryk.<br><br><br><b><u>Værktøjer:</u></b><br>Blender (3D-modellering)<br>Illustrator (grafik)<br><br>',  
   },
   
   { id: 6, 
   slug: 'sos',
   title: 'Politisk plakat - illustrator', 
   heroImage: sos,  
-  longIntro: 'Under vores forløb semiotik og retorik, skulle vi hver især skabe en politisk plakat, om omhandlede et emne vi selv synes var spændende/vigtigt',
-  thumbs: [ sos1 ],
-  moreText: 'These are the closeup renders of my project',  
+  longIntro: 'Under vores forløb semiotik og retorik, skulle vi hver især skabe en politisk plakat, der omhandlede et emne vi selv fandt spændende/vigtigt. <br><br> DRILL SPILL KILL" kritiserer olieindustriens ødelæggende indflydelse på havmiljøet. <br>Den visuelle stil er inspireret af retro-propagandagrafik med skarpe kontraster, forenklede former og en kompromisløs grafisk komposition. <br>Plakaten forsøger ikke at bløde sit budskab op – den kommunikerer direkte, konfronterende og uden filter. <br><br> Plakaten spiller på stærk symbolik og typografi for at skabe følelser af sorg, afsky og handlingstrang. Den efterlader ikke beskueren i tvivl om, hvad der er på spil – havets råb om hjælp drukner under konsekvenserne af menneskelige handlinger.',
+  thumbs: [ sos1, sosMockup, sosMockup2 ],
+  moreText: '', 
+  moreText2: 'Plakaten startede med en præcis skitse, hvor jeg visuelt planlagde komposition, budskab og stemning. <br>Herefter brugte jeg Adobe Illustrator til at generere en grundform af en olieplatform, som jeg tilpassede og redesignede for at matche det udtryk, jeg ønskede. <br><br>Farverne blev nøje udvalgt med inspiration fra retro-politiske plakater, som jeg også lod mig inspirere af i valg af typografi – netop fordi den type visuel kommunikation formår at ramme følelserne direkte og uden omsvøb. <br><br>Da plakaten var færdig i Illustrator, brugte jeg Adobe Lightroom til at tilføje grain og justere kontraster og farvetoner, så det endelige udtryk fik den rå, trykte følelse jeg gik efter.<br><br><br><b><u>Værktøjer:</u></b><br>Illustrator (grafik)<br>Lightroom (postprocessing)<br><br>', 
 },
+
   { id: 7, 
   slug: 'algoritmisk-camoflague',
-  title: 'Algoritmisk camoflague - p5.js', 
+  title: 'Algoritmisk camoflague - projection mapping', 
   heroImage: eyes,  
-  longIntro: 'algoritmisk camoflague',
-  thumbs: [ eyesBig, eyesFull ],
-  moreText: 'These are the closeup renders of my project',  
+  longIntro: 'Mit projekt som er skabt under forløbet "projection mapping", er en interaktiv, digital fortolkning af camouflage, skabt i p5.js og projekteret direkte på en mannequin. <br><br>I stedet for klassisk naturcamouflage arbejder jeg med forstyrrende visuel støj, hvor gentagne, animerede øjne dækker kroppen og "blinker" i forskellige rytmer. <br><br>Øjnene skaber uro og et fornemmelse af, at kroppen selv kigger igen, og henviser til idéen om at forvirre både det menneskelige og digitale blik for at undgå genkendelse i ovrvågningssystemer. <br><br>Mønstret reagerer på brugeren gennem en Arduino-aktiveret knagerække. Når en bøjle hænges på en knage, aktiveres en kontakt, og øjnene begynder at blinke i asynkron rytme.',
+  thumbs: [ camo1, eyesBig, eyesFull ],
+  moreText: '',  
+  poster: [camoPoster],
+  video: [camoMovie],
+  thumbs2: [ide, ide, ide],
+  moreText2: 'Jeg startede med research i camouflage og AI-forstyrrende design. <br>Her kom jeg frem til, at en masse øjne projekteret på en krop, vil kunne forstyrre et ansigtsgenkendelsessystem, og dermed camouflere identitet. <br><br>Herefter byggede jeg en algoritme, der placerede øjne i rækker, og tilføjede spejling og tilfældig placering for at skabe et organisk mønster. Jeg legede også med størrelsen på øjnene.<br><br>Testinteraktivitet blev først styret med tastatur, men blev senere koblet op med Arduino.<br><br><br><b><u>Værktøjer:</u></b><br>p5.js (Web Editor)<br>Photoshop (billedgenerering af øjne)<br><br><br>',  
 },
   { id: 8, 
   slug: '2-eksamen',
-  title: '1. års eksamensprojekt - While in battle im free, never free to rest', 
+  title: 'While in battle im free, never free to rest - visuel identitet', 
   heroImage: WIBposter,  
-  longIntro: 'algoritmisk camoflague',
-  thumbs: [ WIBidentitet ],
-  moreText: 'These are the closeup renders of my project',  
+  longIntro: 'Dette projekt er udviklet som en visuel identitet og kampagnemateriale til danseforestillingen While in battle I’m free, never free to rest af koreograf Hooman Sharifi. <br><br>Forestillingen bringer 20 dansere fra vidt forskellige baggrunde sammen – halvt fra gade- og hiphopmiljøet, halvt fra det svenske kompagni Cullberg – i en kraftfuld, politisk og fysisk fortælling om kamp, frihed og fællesskab. <br><br>Mit arbejde har været at skabe en visuel helhed, der formidler og promoverer forestillingens energi, stemning og tematik. <br><br>Resultatet består af en visuel identitet, en plakat og et kampagnesite som tilsammen skal vække nysgerrighed, engagere publikum og give en fornemmelse af forestillingens intense og kollektive univers.',
+  thumbs: [ WIBprint2,WIBprint1 ],
+  moreText: 'Både plakaten og den visuelle identitet skulle printes ud og monteres på skumpap. <br><br>Mit design et bygget op på kontraster: det kropslige mod det digitale, det dynamiske mod det strukturerede og farverne – støvet beige, blodrød og sort – skaber en følelse af både jordforbindelse og uro. <br><br>Gloss Drop bruges til titlen og tilfører energi og personlighed, mens Pragmatica sikrer læsbarhed i det praktiske lag. <br><br>På plakaten fremstår titlen som et kropsligt udbrud midt på siden og giver en fornemmelse af bevægelse. En silhouet i baggrunden understreger det fysiske og energiske, og inviterer til nysgerrighed.',  
+  thumbs25: [ WIBidentitet ],
+  moreText2: 'Jeg startede med at researche både Metropolis, Cullberg og Hooman Sharifi. Jeg læste interviews og prøvemateriale og gik i dybden med James Baldwins citat, som forestillingen er opkaldt efter. <br><br>Det var vigtigt for mig at forstå den politiske og menneskelige kerne i værket, inden jeg satte noget visuelt på det. Min proces begyndte med skitser – både typografi, kompositioner og ideer til visuelle udtryk. <br><br>Jeg testede forskellige former for håndskrift og eksperimenterede med hvordan bevægelse kunne oversættes til både print og skærm. Plakaten og den visuelle identitet er lavet i Illustrator, og sitet er kodet i Vue.js med SCSS. <br><br>Jeg ville skabe en sammenhæng, hvor alt taler med samme stemme – men stadig har plads til kontraster. For ligesom i forestillingen, ligger energien netop i det ujævne, det modsætningsfyldte og det levende.<br><br><b><u>Værktøjer:</u></b><br>Illustrator (plakat og visuel identitet)<br>Vue (kampagnesite og interaktiv feature)<br>CSS & HTML (styling og struktur af site)<br>Figma (wireframes og overblik)<br><br>', 
+
 },
   { id: 9, 
   slug: '3-eksamen',
-  title: '3. semester eksamensprojekt - nakkesmerte-app', 
+  title: 'Balance - nakkesmerte-app', 
   heroImage: bLogo,  
-  longIntro: 'Dette er en nakkesmerteapp',
-  thumbs: [ bLogo ],
-  moreText: 'These are the closeup renders of my project',  
+  longIntro: '"Balance" er et projekt udviklet i samarbejde med Danske Fysioterapeuter, og tager afsæt i et sundhedsfremmende tiltag rettet mod unge mellem 14–20 år. <br><br>Appen kombinerer visuel identitet, interaktivt design og personlig brugerfeedback for at gøre fysisk sundhed og forebyggelse mod nakkesmerter til en naturlig del af unges hverdag. <br><br>Mit arbejde har været at skabe et design, der både motiverer og engagerer – med en klar tone-of-voice, visuelle kontraster og et flow, der føles let og personligt. <br><br>Resultatet er en prototype på en mobilapp, der guider brugeren gennem daglige øvelser og tilbyder skræddersyede anbefalinger baseret på deres input.',
+  thumbs: [ bWhole, bMaskot ],
+  moreText: 'Appens visuelle stil er bygget op omkring kontraster – det bløde mod det digitale, det fysiske mod det strukturerede. <br><br>Farverne er varme og rolige, men samtidig energiske: en støvet beige, en dyb sort og en grøn accent som signalerer sundhed og fremgang. <br><br>Typografisk balancerer appen mellem det personlige og det klare. Gloss Drop tilfører energi og karakter i overskrifterne, mens Pragmatica står for læsbarheden i den informative del. <br><br>Den lille maskot i appen er med til at skabe en følelse af nærvær og kontinuitet – den guider brugeren og skaber visuel genkendelighed.', 
+  poster: [bPoster], 
+  video: [bMovie],
+  thumbs3: [bVI],
+  thumbs2: [bSketches, bWIP, bWIP2],
+  moreText2: 'Jeg startede med en grundig research i emnet nakkesmerter, unge menneskers vaner og eksisterende sundhedsapps. Det var vigtigt for mig at forstå både problemets omfang og brugerens behov. <br><br>Ud fra det udviklede jeg koncept og struktur – hvordan skal flowet i appen fungere? Hvordan sikrer man motivation uden at det føles som en byrde? <br><br>Jeg arbejdede med wireframes i Figma, og byggede derefter appen i Vue.js. Jeg udviklede et simpelt, men responsivt kortsystem, hvor brugeren får anbefalinger baseret på dagens skærmtid, stivhed og øvelsesniveau. <br><br>En vigtig del af processen har også været at integrere interaktive elementer, som giver feedback og skaber engagement – fx en animationslignende effekt, der viser maskotten reagere på brugerens input. <br><br><b><u>Værktøjer:</u></b><br>Vue (interaktiv prototype)<br>Figma (UX, wireframes og flow)<br>Illustrator (visuel identitet og ikon-design)<br>Photoshop (billedgenerering af videostills)<br>CSS (styling og layout)<br><br>',
 },
   { id: 10, 
   slug: 'projecttion-mapping',

@@ -33,7 +33,7 @@
      <!-- thumbs2.5 -->
      <section
   v-if="project.thumbs25?.length"
-  class="detail-thumbs page-grid"
+  class="detail-thumbs page-grid thumbs25"
   :class="{ 'thumbs-few': project.thumbs25.length <= 2 }"
 >
   <div 
@@ -86,7 +86,7 @@
     </section>
 
     <section>
-      <div class="page-title">
+      <div class="page-title page-title1">
       <p>Process</p>
     </div>
     </section>
@@ -265,6 +265,10 @@ export default {
   color: #fff;
   text-shadow: 0 0 10px rgba(0,0,0,0.3);
   user-select: none;
+}
+
+.page-title1 {
+  margin-top: 0;
 }
 
 /* ========== RESPONSIVE STYLES ========== */
