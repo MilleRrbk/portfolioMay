@@ -93,7 +93,14 @@ import bLogo from '@/assets/imgs/projekter/3eksamen/bLogo.png'
 
 //projection mapping - fortolkning af breve til fremtiden
 import tarmMovie from '@/assets/mp4s/tarmMovie.mp4'
-import PMTarmPic from '@/assets/imgs/projekter/tarmproject/PMtarmpic.JPG'
+import tarmPoster from '@/assets/imgs/projekter/tarmproject/tarmPoster.png'
+import tarmHero from '@/assets/imgs/projekter/tarmproject/tarmHero.JPG'
+import tarmPic from '@/assets/imgs/projekter/tarmproject/tarmPic.JPG'
+import tarmPic2 from '@/assets/imgs/projekter/tarmproject/tarmPic2.JPG'
+import tarmPic3 from '@/assets/imgs/projekter/tarmproject/tarmPic3.JPG'
+import tarmSS from '@/assets/imgs/projekter/tarmproject/tarmSS.png'
+import tarmWIP from '@/assets/imgs/projekter/tarmproject/tarmWIP.png'
+import tarmWIP2 from '@/assets/imgs/projekter/tarmproject/tarmWIP2.jpg'
 
 //4. eksamen - Havet under pres
 import hupFortid from '@/assets/imgs/projekter/HUP/HUPfortid.png'
@@ -240,10 +247,14 @@ export const workProjects = [
   { id: 10, 
   slug: 'projecttion-mapping',
   title: 'Projection mapping', 
-  heroImage: PMTarmPic,  
-  longIntro: 'Dette er ting',
-  thumbs: [ bLogo ],
-  moreText: 'These are the closeup renders of my project',  
+  heroImage: tarmHero,  
+  longIntro: 'Som en del af Snart-udstillingen på Thoravej 29 blev vi inviteret til at skabe et værk baseret på unges breve om fremtiden. Generation Hope havde samlet tusindvis af breve fra unge over hele landet – fyldt med håb og frygt for det, der kommer.<br><br>Min samarbejdspartner Emma og jeg tog udgangspunkt i ét af brevene – et, der i stedet for håb bar på mørk ironi og total afmagt.<br><br>På den baggrund skabte vi en video af en nøgen menneskekrop, hvor maven står åben, og indvolde bliver skåret op indefra. Værket er et billede på, hvordan fremtiden for nogle ikke føles som noget, der kan leves i – og hvordan livet kan opleves som noget, man ikke selv har kontrol over.',
+  thumbs: [tarmPic, tarmPic2, tarmPic3], 
+  moreText: '',
+  poster: [tarmPoster],
+  video: [tarmMovie],
+  thumbs2: [ tarmSS, tarmWIP, tarmWIP2 ],
+  moreText2: 'Brevet lød: “Jeg glæder mig til ikke at kunne bo i mit hjemland, da det ikke eksisterer og står under vand. Ser frem til at blive slået ihjel af en krig, der ikke kommer mig ved.” Det var ikke et klassisk håbefuldt ungdomsbrev, men en knivskarp afvisning af fremtiden som et håb. <br><br>Vi brugte ægte grisetarme, fyldt med sand og hjemmelavet blod, og filmede dem, mens vi skar dem op. <br><br>Tarmene blev et symbol på kroppen – sårbar, udstillet, oversvømmet indefra. Over videoen lagde vi tekst ind som: “Not my war”, “Lost my land”. <br><br>Ordene flimrer som efterladte tanker krise og opløsning. Videoen blev projiceret direkte på en vase med en blomst i ude på Thoravej 29.<br><br><b><u>Værktøjer:</u></b><br>After Effects (videoredigering og tekst-overlay)<br>Kamera (optagelse af indvolde)<br>Photoshop (billedredigering)<br>Projektor (projektion på vase)<br><br>', 
 },
 
 ]
