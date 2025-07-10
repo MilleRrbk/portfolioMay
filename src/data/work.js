@@ -94,7 +94,7 @@ import bLogo from '@/assets/imgs/projekter/3eksamen/bLogo.png'
 //projection mapping - fortolkning af breve til fremtiden
 import tarmMovie from '@/assets/mp4s/tarmMovie.mp4'
 import tarmPoster from '@/assets/imgs/projekter/tarmproject/tarmPoster.png'
-import tarmHero from '@/assets/imgs/projekter/tarmproject/tarmHero.JPG'
+import tarmHero from '@/assets/imgs/projekter/tarmproject/tarmHero.jpg'
 import tarmPic from '@/assets/imgs/projekter/tarmproject/tarmPic.JPG'
 import tarmPic2 from '@/assets/imgs/projekter/tarmproject/tarmPic2.JPG'
 import tarmPic3 from '@/assets/imgs/projekter/tarmproject/tarmPic3.JPG'
