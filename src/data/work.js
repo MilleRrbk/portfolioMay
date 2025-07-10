@@ -92,7 +92,7 @@ import bVI from '@/assets/imgs/projekter/3eksamen/bVI.png'
 import bLogo from '@/assets/imgs/projekter/3eksamen/bLogo.png'
 
 //projection mapping - fortolkning af breve til fremtiden
-import tarmMovie from '@/assets/imgs/projekter/tarmproject/tarmMovie.mp4'
+import tarmMovie from '@/assets/mp4s/tarmMovie.mp4'
 import PMTarmPic from '@/assets/imgs/projekter/tarmproject/PMtarmpic.JPG'
 
 //4. eksamen - Havet under pres
